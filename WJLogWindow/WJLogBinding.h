@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WJLogBinding : NSObject
-
++ (instancetype)sharedLog;
+/** 所有输出日志  */
+@property (nonatomic, strong, readonly) NSArray *allLogs;
 @end
 
 NS_ASSUME_NONNULL_END
